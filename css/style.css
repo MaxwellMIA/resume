@@ -10,19 +10,28 @@ h1, h2{
     font-family: "Oswald", sans-serif;
 }
 
-a {
-    text-decoration: none;
-    color:#6495ed ;
-}
-
 p, li {
     font-family: "Oswald", sans-serif;
     font-size: large;
 }
 
+p, li, h2 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
 /*paddings*/
 footer, h2, p, li{
     padding: 10px;
+}
+
+.btn {
+    color: #fff8dc;
+    background-color: #6495ed;
+    outline: #6495ed;
 }
 
 .divs {
