@@ -1,124 +1,152 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 /* font-family: "Oswald", sans-serif; */
+/* #fff8dc #e9ddaf #6495ed #4c7ace */
 
-body {
-    background-color: #fff8dc;
-}
 
-h1, h2, b{
-    color: #6495ed;
-    font-family: "Oswald", sans-serif;
-}
+/* tags */
+    body {
+        background-color: #fff8dc;
+    }
 
-p, li {
-    font-family: "Oswald", sans-serif;
-    font-size: large;
-}
+    ul {
+        list-style-type: none;
+    }
 
-#center, li, h2, b {
-    text-align: center;
-}
+    b, h1, h2{
+        color: #6495ed;
+        font-family: "Oswald", sans-serif;
+    }
 
-ul {
+    li, p {
+        font-family: "Oswald", sans-serif;
+        font-size: large;
+    }
+/* end */
+
+#nav {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    border: 0px;
+ }
+ 
+ 
+ nav ul {
     list-style-type: none;
-}
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  nav  li {
+    float: left;
+    color: #6495ed;
+  }
+  nav  li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+ 
+
+/* class */
+    .divs {
+        padding: 120px 40px 40px 40px;
+    }
+/* end */
+
+/* id */
+    #Me {
+        border-radius: 50%;
+        overflow: hidden;
+        width: 300px;
+        float: left;
+        margin: 0 30px 20px 0;
+    }
+/* end */
+
+/* all */
+    b, h2, li, #center {
+        text-align: center;
+    }
+/* end */
 
 /*paddings*/
-footer, h2, p, li{
-    padding: 10px;
-}
+    footer, h2, p, li{
+        padding: 10px;
+    }
+/* end */
 
-.btn {
-    color: #fff8dc;
-    background-color: #6495ed;
-    border-color: #6495ed;
-}
-.btn:hover {
-    color: #fff8dc !important;
-    background-color: #6495ed !important;
-    border-color: #6495ed !important;
-}
-
-
-.divs {
-    padding: 120px 40px 40px 40px;
-}
-
-#Me {
-    border-radius: 50%;
-    overflow: hidden;
-    width: 300px;
-    float: left;
-    margin: 0 30px 20px 0;
-}
+/* star buttons */
+    .btn {
+        color: #fff8dc;
+        background-color: #6495ed;
+        border-color: #6495ed;
+    }
+    .btn:hover {
+        color: #e9ddaf !important;
+        background-color: #4c7ace !important;
+        border-color: #4c7ace !important;
+    }
+/* end */
 
 /* drop down references */
-
-
-#drop{
-    font-size:25px;
-    border-top:solid 1px #462521;
-    border-bottom:solid 1px #462521;
-    margin: 20px;
-    padding: 20px;
-}
-
-#drop2{
-    font-size:20px;
-    border-bottom:1px solid #462521;
-    margin: 20px;
-    padding: 20px;
-}
-
-
-/* hover */
-@media (any-hover: hover) {
-    a:hover {
-      Color: #5077be;
+    #drop{
+        font-size:25px;
+        border-top:solid 1px #4c7ace;
+        border-bottom:solid 1px #4c7ace;
+        margin: 20px;
+        padding: 20px;
     }
-}
+
+    #drop2{
+        font-size:20px;
+        border-bottom:1px solid #4c7ace;
+        margin: 20px;
+        padding: 20px;
+    }
+/* end */
 
 /*Nav bar*/
-.navbar {
-    background-color: #e9ddaf;
-}
-
-.nav-item {
-    padding: 5px;
-    margin: 5px;
-}
-
-
-/*-------- Tablet Media Query --------*/
-@media screen and (min-width: 769px) {
-    .container {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(230px, 1fr));
-        grid-gap: 20px;
-        padding: 20px;
-    }
-}
-
-
-/*-------- Tablet Media Query --------*/
-@media screen and (min-width: 769px) {
-    .container {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(230px, 1fr));
-        grid-gap: 20px;
-        padding: 20px;
-    }
-}
-/*-------- End of Tablet Media Query --------*/
-
-/*-------- Desktop Media Query --------*/
-@media screen and (min-width: 1025px) {
-    .container  {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(230px, 1fr));
-        grid-gap: 20px;
-        padding: 20px;
+    .navbar {
+        background-color: #e9ddaf;
     }
 
-}
-/*-------- End Desktop Media Query --------*/
+    .nav-item {
+        padding: 5px;
+        margin: 5px;
+    }
+/* end */
+
+/* Tablet Media Query */
+    @media screen and (min-width: 769px) {
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(230px, 1fr));
+            grid-gap: 20px;
+            padding: 20px;
+        }
+    }
+/* end */
+
+/* Tablet Media Query */
+    @media screen and (min-width: 769px) {
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(230px, 1fr));
+            grid-gap: 20px;
+            padding: 20px;
+        }
+    }
+/* end */
+
+/* Desktop Media Query */
+    @media screen and (min-width: 1025px) {
+        .container  {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(230px, 1fr));
+            grid-gap: 20px;
+            padding: 20px;
+        }
+    }
+/* end */
